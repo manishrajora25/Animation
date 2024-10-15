@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    animation: move  5s ease infinite;
+    position: relative;
+}
+@keyframes move{
+     
+    0%{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    20%{
+        position: absolute;
+        top: 440px;
+        left: 350px;
+        transform: rotate(90deg);
+        background-color: cadetblue;
+    }
+
+    40%{
+        position: absolute;
+        top: 0px;
+        left: 550px;
+        background-color: chartreuse;
+        transform: rotate(-90deg);
+
+    }
+
+    60%{
+        position: absolute;
+        top: 440px;
+        left: 850px;
+    }
+    80%{
+        position: absolute;
+        top: 0px;
+        left: 1000px;
+        background-color: brown;
+        transform: rotate(90deg);
+    }
+}

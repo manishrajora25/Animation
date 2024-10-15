@@ -1,0 +1,79 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/* .box{
+    position: relative;
+} */
+
+
+.goal{
+    width: 300px;
+    height: 300px;
+    border: 1px solid yellow;
+    background-color: rgb(255, 255, 0);
+    margin: 30px;
+    border-radius: 50%;
+  
+}
+
+
+.box{
+    position: relative;
+    animation: move 3s ease infinite;  
+}
+@keyframes move  {
+
+    0%{  position: absolute;
+        top: 0;
+        left: 0;
+       
+    }
+    50%{
+        position: absolute;
+        top: 0;
+        left: 1000px;
+        transform: rotate(90deg);
+    }
+
+    100%{
+        position: absolute;
+        top: 1100;
+        left: 0px;
+    }
+
+}
+
+.the{
+    width: 37px;
+    height: 37px;
+    background-color: brown;
+     border-radius: 50%;
+     position: absolute;
+    left: 215px;
+    top: 100px; 
+
+}
+.name{
+    width: 40px;
+    height: 40px;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    left: 105px;
+    top: 100px;
+
+}
+
+.emoji{
+    height: 20px;
+    width: 150px;
+    background-color: brown;
+    border-radius: 20px;
+     position: absolute;
+    left: 105px;
+    top: 220px; 
+} 
